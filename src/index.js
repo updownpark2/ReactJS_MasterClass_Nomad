@@ -2,8 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "styled-components";
 import App from "./App";
-import StyledComponentTraining from "./StyledComponentTraining";
-import ThemeTraining from "./ThemeTraining";
 const darkTheme = {
   textColor: "whitesmoke",
   backgroundColor: "#111",
@@ -17,7 +15,7 @@ const lightTheme = {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ThemeProvider theme={darkTheme}>
-    <ThemeTraining />
+    <App />
   </ThemeProvider>
 );
 
